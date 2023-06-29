@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .bg-noise-black {
+    background-color: #1C1C1C;
+    background-image: url('../images/noise.png');
+} */
+
+@layer components {
+    .container {
+        @apply max-w-6xl mx-auto px-5
+    }
+    
+    .who-link {
+        @apply flex items-center w-fit font-semibold text-xl text-left hover:text-blue-500
+    }
+    
+    .tech-point {
+        @apply inline-block w-1.5 h-1.5 rounded-full bg-[#FFCB47]
+    }
+
+    .border-white {
+        @apply border-white
+    }
+
+    .border-black {
+        @apply border-black
+    }
+
+    .btn-primary {
+        @apply relative bg-blue-700 text-lg text-white hover:text-blue-700 border-2 border-blue-700 overflow-hidden
+    }
+    .btn-primary-inner {
+        @apply absolute top-1/2 left-1/2 transition-all rounded-full duration-500 transform -translate-x-1/2 -translate-y-1/2 bg-white w-0 h-0
+    }
+    .btn-primary-inner-content {
+        @apply relative z-10
+    }
+
+    @font-face {
+        font-family: MontBold;
+        src: url(../fonts/MontBold.woff2);
+    }
+
+    @font-face {
+        font-family: MontHeavy;
+        src: url(../fonts/MontHeavy.woff2);
+    }
+
+    @font-face {
+        font-family: MontRegular;
+        src: url(../fonts/MontRegular.woff2);
+    }
+
+    @font-face {
+        font-family: MontSemiBold;
+        src: url(../fonts/MontSemiBold.woff2);
+    }
+}
